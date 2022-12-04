@@ -1,5 +1,5 @@
 ![image text](https://media.istockphoto.com/id/1288255759/photo/database-or-network-server-concept.jpg?b=1&s=170667a&w=0&k=20&c=hUK2K6raAvqMvhE_9EgHHUYw9qF5-VC5WHG-CceH5Bk=)
-# CS 365 Final Project
+# CS365 Final Project
 
 Final for CS 365 - Principles of Database Systems
 
