@@ -46,7 +46,7 @@ pip install (package_name)
 ## Results
 
 Once you run the code successfully, refresh your Workbench and you will see data for 
-every table. The tables are as follows:
+every table. The tables created are as follows:
 * User Tables
   * user
     * id (primary key), first name, last name, username, phone number, email, 
