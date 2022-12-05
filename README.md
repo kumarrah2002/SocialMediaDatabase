@@ -1,5 +1,5 @@
 ![image text](https://media.istockphoto.com/id/1288255759/photo/database-or-network-server-concept.jpg?b=1&s=170667a&w=0&k=20&c=hUK2K6raAvqMvhE_9EgHHUYw9qF5-VC5WHG-CceH5Bk=)
-# CS365 Final Project
+# CS 365 Final Project
 
 Final for CS 365 - Principles of Database Systems
 
@@ -8,6 +8,10 @@ Final for CS 365 - Principles of Database Systems
 For this project, we were tasked with creating a database design for a social media platform. 
 Due to the large amounts of data collected on these platforms, we created multiple tables to
 hold information concerning different user actions on these platforms. 
+
+## E-R Diagram
+
+![image text](er-diagram.jpg)
 
 ## Getting Started
 
@@ -46,7 +50,7 @@ pip install (package_name)
 ## Results
 
 Once you run the code successfully, refresh your Workbench and you will see data for 
-every table. The tables created are as follows:
+every table. The tables are as follows:
 * User Tables
   * user
     * id (primary key), first name, last name, username, phone number, email, 
@@ -96,4 +100,4 @@ Abdullah Hussain
 ## Acknowledgments
 
 This project is for Dr. Mohammed Kamruzzaman Sarker's class at the University of Hartford.
-Plagiarism from these Python files without references to the authors are not permitted and will not be tolerated. 
+Plagiarism of any kind from these Python files are not permitted and will not be tolerated. 
