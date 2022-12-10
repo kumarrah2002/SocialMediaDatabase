@@ -10,10 +10,12 @@ from essential_generators import DocumentGenerator
 import os
 import glob
 
+
 # ----------------------------------------------------------------------------------------------------------------------
 #                                        CONNECT TO MYSQL WORKBENCH
 # ----------------------------------------------------------------------------------------------------------------------
 
+# Global variables are dangerous. Store this in a main method or external file
 mydb = mysql.connector.connect(host='localhost',
                                user='root',
                                password='root',
@@ -31,6 +33,8 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS social_media_database")
 #                                               DEFINE USER TABLES
 # ----------------------------------------------------------------------------------------------------------------------
 
+
+# All of this is in-secure. Keep your queries in .sql files and call them like this: https://stackoverflow.com/questions/19472922/reading-external-sql-script-in-python
 user = 'CREATE TABLE IF NOT EXISTS user (id bigint(20) PRIMARY KEY AUTO_INCREMENT, firstname varchar(45) NOT NULL, ' \
        'lastname varchar(45) NOT NULL, username varchar(45) NOT NULL UNIQUE, phone varchar(45), ' \
        'email varchar(45) NOT NULL, password varchar(45) NOT NULL, birthday DATETIME, age int, ' \
@@ -65,6 +69,7 @@ create_userMessage = 'CREATE TABLE IF NOT EXISTS userMessage (' \
                      'createDate DATETIME NOT NULL,' \
                      'FOREIGN KEY (id) REFERENCES user(id)) AUTO_INCREMENT = 4000000'
 
+# EDIT 1
 mycursor.execute(user)
 mycursor.execute(create_userPost)
 mycursor.execute(create_userMessage)
@@ -74,6 +79,9 @@ mycursor.execute(userStore)
 # ----------------------------------------------------------------------------------------------------------------------
 #                                               DEFINE GROUP TABLES
 # ----------------------------------------------------------------------------------------------------------------------
+
+
+# EDIT 2
 
 # group table
 group = 'CREATE TABLE IF NOT EXISTS group_table(' \
@@ -130,6 +138,8 @@ mycursor.execute(groupPost)
 #                                               DEFINE FUNCTIONS
 # ----------------------------------------------------------------------------------------------------------------------
 
+
+# EDIT 3
 gen = DocumentGenerator()
 
 
@@ -239,6 +249,8 @@ def get_rows(table):
     rows = mycursor.fetchone()
     return rows[0]
 
+
+# EDIT 4 ( add a main method )
 
 # ----------------------------------------------------------------------------------------------------------------------
 #                                               DATA INSERTION
