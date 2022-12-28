@@ -100,4 +100,4 @@ Abdullah Hussain
 ## Acknowledgments
 
 This project is for Dr. Mohammed Kamruzzaman Sarker's class at the University of Hartford.
-Plagiarism of any kind from these Python files are not permitted and will not be tolerated. 
+Plagiarism of any kind from these Python files is not permitted and will not be tolerated. 
